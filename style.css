@@ -4,17 +4,23 @@ body{
 .black{
   background-color: rgb(0,0,0);
 }
-.grey{
-  background-color: rgba(0,0,0, 0.8);
-}
 .pt-20{
   padding-top:20px;
 }
 .mt-20{
   margin-top:20px;
 }
+.grey{
+  background-image: linear-gradient(to right, #2f322b, #282621, #1f1b19, #131010, #000000);
+}
+.pt-30{
+  padding-top:30px;
+}
+.mt-50{
+  margin-top:50px;
+}
 .col-md-2, .col-md-10{
-  height:100vh;
+  height:950px;
 }
 /* per l'immagine di Spotify */
 .col-md-2 .spotify-logo{
@@ -40,10 +46,11 @@ body{
 .col-md-2 ul li a:hover{
   color:white;
 }
-/* per il bordino verde al lato */
+/* per il bordino verde al lato DI HOME */
 .col-md-2 .home-border{
   position:relative;
 }
+/* per il bordino verde al lato di HOME */
 .col-md-2 .home-border::before{
   content:'';
   display: block;
@@ -92,6 +99,72 @@ body{
   border-bottom:1px solid white;
 }
 /* per la scritta Home */
-.col-md-2 .white-font{
+.col-md-2 ul .white-font{
   color:white;
+}
+
+
+/* per la lista della seconda colonna */
+.col-md-10 ul{
+  text-align:center;
+  padding:0;
+}
+.col-md-10 ul li{
+  display:inline-block;
+  margin-left:30px;
+}
+.col-md-10 ul li a, .col-md-2 ul li a{
+  color: #b3b3b3;
+}
+.col-md-10 ul li a{
+  font-weight: bold;
+}
+.col-md-10 ul li a:hover{
+  color:white;
+  text-decoration: none;
+}
+/* per il bordo sotto la scritta IN EVIDENZA */
+.col-md-10 .evidence-border{
+  position:relative;
+}
+/* per il bordo sotto IN EVIDENZA */
+.col-md-10 .evidence-border::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  margin-top:3px;
+  border-top: 2px solid green;
+}
+.col-md-10 h1{
+  font-weight:bold;
+}
+.col-md-10 .white{
+  color:white;
+}
+/* per il container flex */
+.col-md-10 .container-flex{
+  display:flex;
+  width:100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.col-md-10 .container-flex .card{
+  margin-bottom:20px;
+}
+.col-md-10 .container-flex img{
+  width:162.5px;
+  height:162.5px;
+}
+.col-md-10 .card a{
+  color:white;
+  text-decoration: none;
+}
+.col-md-10 .card p{
+  margin-top:10px;
+}
+/* per nascondere le ultime due cards */
+.col-md-10 .none{
+  opacity: 0;
 }
