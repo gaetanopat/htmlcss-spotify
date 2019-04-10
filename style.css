@@ -211,6 +211,7 @@ body{
 .second .col-md-3 .btn-default{
   color:#4687d6;
 }
+
 /* FOOTER */
 footer{
   background-color:#282828;
@@ -245,4 +246,126 @@ footer .col-md-12 ul li a:hover{
 }
 footer .col-md-12 .fa-play:hover{
   border:1px solid white;
+}
+
+
+/* media query */
+@media (max-width: 767px) {
+  .first .col-md-2,.first .col-md-10{
+    height:1650px;
+  }
+  /* per l'immagine spotify */
+  .col-md-2 .spotify-logo{
+    width: 100%;
+  }
+  /* per far rimanere solo le icone */
+  .first .col-md-2 span{
+    display:none;
+  }
+  /* per togliere Privacy e Politica sui cookie */
+  .first .col-md-6{
+    display:none;
+  }
+  /* per togliere i bottoni della prima colonna*/
+  .first .col-md-2 button{
+    display:none;
+  }
+  /* per la lista della seconda colonna */
+  .first .col-md-10 ul li{
+    font-size:10px;
+  }
+  .first .col-md-10 .none{
+    display:none;
+  }
+  /* modifico la larghezza delle carte */
+  .first .col-md-10 .card{
+    width:100px;
+    height:auto;
+  }
+  .first .col-md-10 .card img{
+    width:100px;
+    height:auto;
+  }
+  /* tolgo il padding top */
+  .pt-30{
+    padding-top:0;
+  }
+  .pt-20{
+    padding-top:0;
+  }
+  .first .col-md-10 ul li {
+    margin-left: 10px;
+  }
+  /* modifico il margin-top */
+  .mt-50{
+    margin-top:10px;
+  }
+  /* altezza colonne seconda sezione (viola) */
+  .second .col-md-9, .second .col-md-3{
+    height:auto;
+  }
+  .second .col-md-9 .title-and-p, .second .col-md-3 button{
+    position:relative;
+    top:0;
+    transform: none;
+    margin-bottom:10px;
+  }
+  /* altezza sezione viola */
+  .second .col-md-12{
+    height:30px;
+  }
+  .second .title-and-p p{
+    display:none;
+  }
+
+  footer .col-md-12{
+    position:relative;
+    height:70px;
+  }
+  /* per centrare la lista */
+  footer .col-md-12 ul{
+    padding:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+  /* per la lista del footer */
+  footer .col-md-12 ul li {
+    margin-right:10px;
+    display: inline-block;
+  }
+}
+@media (min-width:768px) and (max-width: 992px) {
+  .first .col-md-2,.first .col-md-10{
+    height:1800px;
+  }
+  /* per togliere il bordo tra Privacy e Politica dei cookie */
+  .first .col-md-2 .border-left{
+    border-left:none;
+  }
+  .first .col-md-10 .none{
+    display:none;
+  }
+  .second .col-md-3 .btn{
+    border-radius:500px;
+    font-size:14px;
+    padding:8px 0;
+  }
+  /* per l'immagine di Spotify */
+  .col-md-2 .spotify-logo{
+    width: 100%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .first .col-md-10 .none{
+    display:none;
+  }
+  .first .col-md-2,.first .col-md-10{
+    height:1226px;
+  }
+  /* per l'immagine di Spotify */
+  .col-md-2 .spotify-logo{
+    width: 100%;
+  }
 }
