@@ -1,0 +1,97 @@
+body{
+  color:white;
+}
+.black{
+  background-color: rgb(0,0,0);
+}
+.grey{
+  background-color: rgba(0,0,0, 0.8);
+}
+.pt-20{
+  padding-top:20px;
+}
+.mt-20{
+  margin-top:20px;
+}
+.col-md-2, .col-md-10{
+  height:100vh;
+}
+/* per l'immagine di Spotify */
+.col-md-2 .spotify-logo{
+  width: 90%;
+}
+/* per la lista della prima Colonna */
+.col-md-2 ul{
+  padding:0;
+  list-style-type: none;
+}
+.col-md-2 ul li{
+  margin-top:20px;
+}
+/* per le icone della prima Colonna */
+.col-md-2 ul li i{
+  margin-right:15px;
+  font-size:20px;
+}
+.col-md-2 ul li a{
+  color: #b3b3b3;
+  text-decoration: none;
+}
+.col-md-2 ul li a:hover{
+  color:white;
+}
+/* per il bordino verde al lato */
+.col-md-2 .home-border{
+  position:relative;
+}
+.col-md-2 .home-border::before{
+  content:'';
+  display: block;
+  position:absolute;
+  left:-15px;
+  border:2px solid green;
+  height:100%;
+}
+/* per i bottoni */
+.col-md-2 .btn{
+  border-radius:500px;
+  font-size:13px;
+  padding:6px 0;
+}
+/* per il primo bottone lascio un margine top di 30px */
+.col-md-2 .btn-default{
+  margin-top:30px;
+}
+/* per il secondo bottone */
+.col-md-2 .btn-black{
+  color:white;
+  background-color: black;
+  margin-top:10px;
+  border:2px solid #b3b3b3;
+}
+.col-md-2 .btn:hover{
+  box-shadow: inset 0 0 0 2px #fff, 0 0 0 1px rgba(0,0,0,0);
+  transform: scale(1.05,1.05);
+}
+.col-md-2 .politics-padding{
+  padding:0 35px;
+}
+.col-md-2 .col-md-6 a{
+  color:#b3b3b3;
+  text-decoration: none;
+}
+/* per la linea che separa Privacy da Politica sui cookie */
+.col-md-2 .border-left{
+  border-left:1px solid white;
+}
+/* per vedere il bordo sotto leggermente separato */
+.col-md-2 .col-md-6 .border-bottom{
+  padding:3px 0;
+}
+.col-md-2 .col-md-6 .border-bottom:hover{
+  border-bottom:1px solid white;
+}
+/* per la scritta Home */
+.col-md-2 .white-font{
+  color:white;
+}
