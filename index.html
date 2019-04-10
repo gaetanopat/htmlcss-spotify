@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <section>
+    <section class="first black">
       <div class="container-fluid">
         <div class="row">
           <!-- prima colonna -->
-          <div class="col-md-2 black pt-20">
+          <div class="col-md-2 col-sm-2 col-xs-2 pt-20">
             <img class="spotify-logo" src="https://spotify.i.lithium.com/t5/image/serverpage/image-id/27289i6CB37DCE3D36368E?v=1.0" alt="">
             <ul>
-              <li class="home-border"><a class="white-font" href="#"><i class="fas fa-home"></i>Home</a></li>
-              <li><a href="#"><a href="#"><i class="fas fa-search"></i>Cerca</a></li>
-              <li><a href="#"><a href="#"><i class="fas fa-book"></i>La tua libreria</a></li>
+              <li class="home-border"><a class="white-font" href="#"><i class="fas fa-home"></i><span>Home</span></a></li>
+              <li><a href="#"><a href="#"><i class="fas fa-search"></i><span>Cerca</span></a></li>
+              <li><a href="#"><a href="#"><i class="fas fa-book"></i><span>La tua libreria</span></a></li>
             </ul>
             <button type="button" class="btn btn-default btn-block">ISCRIVITI</button>
             <button type="button" class="btn btn-black btn-block">ACCEDI</button>
@@ -31,7 +31,7 @@
             </div>
           </div>
           <!-- seconda colonna -->
-          <div class="col-md-10 grey pt-30">
+          <div class="col-md-10 col-sm-10 col-xs-10 gradient pt-30">
             <ul>
               <li class="evidence-border"><a class="white" href="#">IN EVIDENZA</a></li>
               <li><a href="#">PODCAST</a></li>
@@ -123,5 +123,43 @@
         </div>
       </div>
     </section>
+
+    <div class="fixed">
+      <!-- sezioen viola -->
+      <section class="second violet">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <div class="col-md-9 col-sm-9 con-xs-12">
+                <div class="title-and-p">
+                  <h4>ANTEPRIMA DI SPOTIFY</h4>
+                  <p>Iscriviti per ricevere brani e podcast illimitati con annunci pubblicitari occasionali. Non è necessaria alcuna carta di credito.</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-12">
+                <button type="button" class="btn btn-default btn-block">ISCRIVITI GRATIS</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="grey">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <ul>
+                <li><a href="#"><i class="fas fa-random"></i></a></li>
+                <li><a href="#"><i class="fas fa-step-backward"></i></a></li>
+                <li><a href="#"><i class="fas fa-play"></i></a></li>
+                <li><a href="#"><i class="fas fa-step-forward"></i></a></li>
+                <li><a href="#"><i class="fas fa-redo-alt"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

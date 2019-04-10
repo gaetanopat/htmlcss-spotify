@@ -10,7 +10,7 @@ body{
 .mt-20{
   margin-top:20px;
 }
-.grey{
+.gradient{
   background-image: linear-gradient(to right, #2f322b, #282621, #1f1b19, #131010, #000000);
 }
 .pt-30{
@@ -19,39 +19,39 @@ body{
 .mt-50{
   margin-top:50px;
 }
-.col-md-2, .col-md-10{
-  height:950px;
+.col-md-2,.col-md-10{
+  height:1100px;
 }
 /* per l'immagine di Spotify */
 .col-md-2 .spotify-logo{
   width: 90%;
 }
 /* per la lista della prima Colonna */
-.col-md-2 ul{
+.first .col-md-2 ul{
   padding:0;
   list-style-type: none;
 }
-.col-md-2 ul li{
+.first .col-md-2 ul li{
   margin-top:20px;
 }
 /* per le icone della prima Colonna */
-.col-md-2 ul li i{
+.first .col-md-2 ul li i{
   margin-right:15px;
   font-size:20px;
 }
-.col-md-2 ul li a{
+.first .col-md-2 ul li a{
   color: #b3b3b3;
   text-decoration: none;
 }
-.col-md-2 ul li a:hover{
+.first .col-md-2 ul li a:hover{
   color:white;
 }
 /* per il bordino verde al lato DI HOME */
-.col-md-2 .home-border{
+.first .col-md-2 .home-border{
   position:relative;
 }
 /* per il bordino verde al lato di HOME */
-.col-md-2 .home-border::before{
+.first .col-md-2 .home-border::before{
   content:'';
   display: block;
   position:absolute;
@@ -60,75 +60,75 @@ body{
   height:100%;
 }
 /* per i bottoni */
-.col-md-2 .btn{
+.first .col-md-2 .btn{
   border-radius:500px;
   font-size:13px;
   padding:6px 0;
 }
 /* per il primo bottone lascio un margine top di 30px */
-.col-md-2 .btn-default{
+.first .col-md-2 .btn-default{
   margin-top:30px;
 }
 /* per il secondo bottone */
-.col-md-2 .btn-black{
+.first .col-md-2 .btn-black{
   color:white;
   background-color: black;
   margin-top:10px;
   border:2px solid #b3b3b3;
 }
-.col-md-2 .btn:hover{
+.first .col-md-2 .btn:hover{
   box-shadow: inset 0 0 0 2px #fff, 0 0 0 1px rgba(0,0,0,0);
   transform: scale(1.05,1.05);
 }
-.col-md-2 .politics-padding{
+.first .col-md-2 .politics-padding{
   padding:0 35px;
 }
-.col-md-2 .col-md-6 a{
+.first .col-md-2 .col-md-6 a{
   color:#b3b3b3;
   text-decoration: none;
 }
 /* per la linea che separa Privacy da Politica sui cookie */
-.col-md-2 .border-left{
+.first .col-md-2 .border-left{
   border-left:1px solid white;
 }
 /* per vedere il bordo sotto leggermente separato */
-.col-md-2 .col-md-6 .border-bottom{
+.first .col-md-2 .col-md-6 .border-bottom{
   padding:3px 0;
 }
-.col-md-2 .col-md-6 .border-bottom:hover{
+.first .col-md-2 .col-md-6 .border-bottom:hover{
   border-bottom:1px solid white;
 }
 /* per la scritta Home */
-.col-md-2 ul .white-font{
+.first .col-md-2 ul .white-font{
   color:white;
 }
 
 
 /* per la lista della seconda colonna */
-.col-md-10 ul{
+.first .col-md-10 ul{
   text-align:center;
   padding:0;
 }
-.col-md-10 ul li{
+.first .col-md-10 ul li{
   display:inline-block;
   margin-left:30px;
 }
-.col-md-10 ul li a, .col-md-2 ul li a{
+.first .col-md-10 ul li a, .first .col-md-2 ul li a{
   color: #b3b3b3;
 }
-.col-md-10 ul li a{
+.first .col-md-10 ul li a{
   font-weight: bold;
 }
-.col-md-10 ul li a:hover{
+.first .col-md-10 ul li a:hover{
   color:white;
   text-decoration: none;
 }
 /* per il bordo sotto la scritta IN EVIDENZA */
-.col-md-10 .evidence-border{
+.first .col-md-10 .evidence-border{
   position:relative;
 }
 /* per il bordo sotto IN EVIDENZA */
-.col-md-10 .evidence-border::after {
+.first .col-md-10 .evidence-border::after {
   content: '';
   display: block;
   position: absolute;
@@ -137,34 +137,112 @@ body{
   margin-top:3px;
   border-top: 2px solid green;
 }
-.col-md-10 h1{
+.first .col-md-10 h1{
   font-weight:bold;
 }
-.col-md-10 .white{
+.first .col-md-10 .white{
   color:white;
 }
 /* per il container flex */
-.col-md-10 .container-flex{
+.first .col-md-10 .container-flex{
   display:flex;
   width:100%;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.col-md-10 .container-flex .card{
+.first .col-md-10 .container-flex .card{
   margin-bottom:20px;
 }
-.col-md-10 .container-flex img{
+.first .col-md-10 .container-flex img{
   width:162.5px;
   height:162.5px;
 }
-.col-md-10 .card a{
+.first .col-md-10 .card a{
   color:white;
   text-decoration: none;
 }
-.col-md-10 .card p{
+.first .col-md-10 .card p{
   margin-top:10px;
 }
 /* per nascondere le ultime due cards */
-.col-md-10 .none{
+.first .col-md-10 .none{
   opacity: 0;
+}
+
+.violet{
+  background-image: linear-gradient(90deg,#af2896,#509bf5);
+}
+.fixed{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  z-index:1;
+}
+/* per le colonne della sezione viola */
+.second .col-md-9, .second .col-md-3{
+  position:relative;
+  height:70px;
+}
+/* per centrare */
+.second .col-md-9 .title-and-p, .second .col-md-3 button{
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+.second .col-md-12{
+  padding-left:30px;
+}
+.second .col-md-12 h4{
+  font-size:11px;
+  letter-spacing: .16em;
+}
+.second .col-md-12 p{
+  letter-spacing: .015em;
+}
+/* per il bottone ISCRIVITI GRATIS */
+.second .col-md-3 .btn{
+  border-radius:500px;
+  font-size:14px;
+  padding:8px 48px;
+}
+.second .col-md-3 .btn-block{
+  width:80%;
+}
+.second .col-md-3 .btn-default{
+  color:#4687d6;
+}
+/* FOOTER */
+footer{
+  background-color:#282828;
+}
+footer .col-md-12{
+  position:relative;
+  height:70px;
+}
+/* per centrare la lista */
+footer .col-md-12 ul{
+  padding:0;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+footer .col-md-12 ul li {
+  display:inline-block;
+  margin-right:25px;
+}
+footer .col-md-12 ul li a{
+  color:#b3b3b3;
+}
+/* per l'icona play */
+footer .col-md-12 ul li .fa-play{
+  border-radius:50%;
+  padding:10px;
+  border:1px solid #b3b3b3;
+}
+footer .col-md-12 ul li a:hover{
+  color:white;
+}
+footer .col-md-12 .fa-play:hover{
+  border:1px solid white;
 }
