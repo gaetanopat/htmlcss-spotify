@@ -19,8 +19,15 @@ body{
 .mt-50{
   margin-top:50px;
 }
-.col-md-2,.col-md-10{
+.first .col-md-2,.first .col-md-10{
   height:1100px;
+}
+.first .col-md-2{
+  position:fixed;
+  z-index:1;
+}
+.first .col-md-10{
+  margin-left: 16.6%;
 }
 /* per l'immagine di Spotify */
 .col-md-2 .spotify-logo{
@@ -103,7 +110,6 @@ body{
   color:white;
 }
 
-
 /* per la lista della seconda colonna */
 .first .col-md-10 ul{
   text-align:center;
@@ -147,11 +153,12 @@ body{
 .first .col-md-10 .container-flex{
   display:flex;
   width:100%;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 .first .col-md-10 .container-flex .card{
   margin-bottom:20px;
+  margin-right:15px;
 }
 .first .col-md-10 .container-flex img{
   width:162.5px;
